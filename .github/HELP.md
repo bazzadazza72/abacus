@@ -1,22 +1,29 @@
-## How to log and connect to your Firefly III instance?
+# Connecting to Firefly III
 
-### If you're using an external authentication provider like Authelia, OAuth Clients will not work. You can use Personal Access Tokens only.
+> [!IMPORTANT]
+> If you are using an external authentication provider like Authelia, OAuth clients will not work. You will need to create and use a [personal access token](#using-a-personal-access-token) instead.
+
+## Using an OAuth application
 
 ![img_1.png](HELP/img_1.png)
-1. Go to `/profile` 
-2. Create a new Oauth client with redirect URI: `abacusfiiiapp://redirect`
+1. In Firefly III, go to `/profile`.
+
+2. Create a new OAuth client by clicking `Create new Client`. Enter this redirect URI in the `Redirect URL` box: `abacusfiiiapp://redirect` then click Create.
 
 ![img.png](HELP/img.png)
 
 3. Copy and paste `Oauth Client ID` it will be a number (required, Example: `4`).
 
-4. No need to use the secret client but if you do so copy and paste it in the `Oauth Client Secret` field.
+> [!NOTE]
+> If you chose to enable the `Confidential` box in step 2, you will need to copy the secret and paste it into the `Oauth Client Secret` field.
 
 <img alt="img_2.jpeg" height="670" src="HELP/img_2.jpeg" width="300"/>
 
-### Personal Access Token
+## Using a personal access token
 
-create:
+1. In Firefly III, go to your profile page by clicking `Options > Profile`.
+2. Under Personal Access Tokens, click `Create new token`.
+3. 
 
 <img width="840" alt="image" src="https://github.com/victorbalssa/abacus/assets/12813321/f92c8bba-5c48-4b5c-b2be-5eddfb53e6f2">
 
